@@ -88,28 +88,54 @@ render();
   
   });
 
-    $('.menuBar').click(function() {
-        
-        $('header').toggleClass('open');
+  $('.menuBar').click(function() {
+      
+      $('header').toggleClass('open');
 
-        if($(this).hasClass('menuOpen')){
-            $(this).removeClass('menuOpen');
-        } else {
-            $(this).addClass('menuOpen');
-        }
-        let navBar = $('nav');
-        if(navBar.hasClass('menuOpen')){
-            navBar.removeClass('menuOpen');
-        } else {
-            navBar.addClass('menuOpen');
-        }    
+      if($(this).hasClass('menuOpen')){
+          $(this).removeClass('menuOpen');
+      } else {
+          $(this).addClass('menuOpen');
+      }
+      let navBar = $('nav');
+      if(navBar.hasClass('menuOpen')){
+          navBar.removeClass('menuOpen');
+      } else {
+          navBar.addClass('menuOpen');
+      }    
 
-    });
+  });
 
-    $('nav').click(function(){
-        $('.menuBar').toggleClass('menuOpen');
-        $('nav').toggleClass('menuOpen');
-        $('header').toggleClass('open');
-    });
+  $('nav').click(function(){
+      $('.menuBar').toggleClass('menuOpen');
+      $('nav').toggleClass('menuOpen');
+      $('header').toggleClass('open');
+  });
 });
+
+/*---------------------
+ Progress Bar 
+----------------------*/
+
+let progressWrap = document.querySelectorAll('.progress-wrap');
+
+progressWrap.forEach(item=>{
+    numAnimation(item);
+});
+
+function numAnimation(item){
+  let intialRate =  0;
+  let targetRate = item.getAttribute('data-num');
+  let progressBar = item.querySelector('.bar');
+
+  let numAni = setInterval(()=>{
+    intialRate++;
+    if(intialRate == targetRate){
+      clearInterval(numAni);
+    }
+    progressBar.style.width = `${intialRate}%`;
+  },20);
+}
+
+
 
