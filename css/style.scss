@@ -631,8 +631,8 @@ Media Query
 
  @media only screen and (max-width:767px) {
     .container { padding: 80px 3vw 80px 4vw;}
-    .logo { top: 26px; left:20px;    transform: rotate(0deg);}
-    .info {display: none;}
+    .logo { top: 26px; left:20px; transform: rotate(0deg);}
+    .info { display: none; }
     .menuBar {
         margin-right: 20px;
         margin-top: 29px;
