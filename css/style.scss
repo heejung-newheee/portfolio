@@ -5,7 +5,6 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
-
 section {
     min-height: 100vh;
 }
@@ -103,69 +102,71 @@ $bg4: #ffb924;
     position: absolute;
     z-index: 1;
     filter:url('#goo');
-    transform-origin: center;
+    transform-origin: center;   
     
-    // 호버시 커서 transform
-    &.point { z-index: 0; }
-    &.point .blob {
+    .blob {
+        position: absolute;
+        margin: -#{$diameter1/2} 0 0 -#{$diameter1/2};
         width: $diameter1;
         height: $diameter1;
+        border-radius: 100%;
+        background: $bg1;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        
+        &:nth-child(2) {
+        width: $diameter2;
+        height: $diameter2;
+        margin: -#{$diameter2/2} 0 0 -#{$diameter2/2};
+        z-index: -1;
+        background: $bg2;
+        }
+        
+        &:nth-child(3) {
+        width: $diameter3;
+        height: $diameter3;
+        margin: -#{$diameter3/2} 0 0 -#{$diameter3/2};
+        z-index: -2;
+        background: $bg3;
+        }
+        
+        &:nth-child(4) {
+        width: $diameter4;
+        height: $diameter4;
+        margin: -#{$diameter4/2} 0 0 -#{$diameter4/2};
+        z-index: -3;
+        background: $bg4;
+        }
+    }
+
+    // 호버시 커서 transform
+    & + svg { display: none;}
+    &.point { z-index: 0; }
+    &.point .blob {
+        width: $diameter1*2;
+        height: $diameter1*2;
         background-color: coral;
+        margin: -#{($diameter1*2)/2} 0 0 -#{($diameter1*2)/2};
 
         &:nth-child(2) {
             width: $diameter2*2;
             height: $diameter2*2;
             margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
-            }
-            
-            &:nth-child(3) {
+        }
+        
+        &:nth-child(3) {
             width: $diameter3*2;
             height: $diameter3*2;
-            margin: -#{($diameter2*3)/2} 0 0 -#{($diameter2*3)/2};
-            }
-            
-            &:nth-child(4) {
-            width: $diameter4*2;
-            height: $diameter4*2;
-            margin: -#{($diameter2*3)/2} 0 0 -#{($diameter2*3)/2};
-            }
-    }
-    & + svg { display: none;}
-        .blob {
-            position: absolute;
-            margin: -#{$diameter1/2} 0 0 -#{$diameter1/2};
-            width: $diameter1;
-            height: $diameter1;
-            border-radius: 100%;
-            background: $bg1;
-            top: 50%;
-            left: 50%;
-            pointer-events: none;
-            
-            &:nth-child(2) {
-            width: $diameter2;
-            height: $diameter2;
-            margin: -#{$diameter2/2} 0 0 -#{$diameter2/2};
-            z-index: -1;
-            background: $bg2;
-            }
-            
-            &:nth-child(3) {
-            width: $diameter3;
-            height: $diameter3;
-            margin: -#{$diameter3/2} 0 0 -#{$diameter3/2};
-            z-index: -2;
-            background: $bg3;
-            }
-            
-            &:nth-child(4) {
-            width: $diameter4;
-            height: $diameter4;
-            margin: -#{$diameter4/2} 0 0 -#{$diameter4/2};
-            z-index: -3;
-            background: $bg4;
-            }
+            margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
         }
+        
+        &:nth-child(4) {
+        width: $diameter4*2;
+        height: $diameter4*2;
+        margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
+        }
+    }
   
 }
 /**************************
