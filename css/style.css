@@ -13,6 +13,7 @@ section {
   padding: 80px 80px;
   height: inherit;
   margin: auto;
+  position: relative;
   z-index: 1;
 }
 
@@ -618,6 +619,47 @@ WORK Subpage Detail
 }
 .workSub .detailInfo .detailBtn .deBtn:last-child {
   float: right;
+}
+
+/************************** 
+Contact us
+ **************************/
+#contact .container .contacInfo .touch {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+#contact .container .contacInfo .myInfo div {
+  padding-bottom: 30px;
+}
+#contact .container .contacInfo .myInfo div p {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+#contact .container .contacInfo .myInfo div p a {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+#contact .container .contacInfo .myInfo strong {
+  font-family: "Montserrat", sans-serif;
+}
+#contact .container .contacInfo .snsWrap ul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+#contact .container .contacInfo .snsWrap ul li {
+  padding-right: 30px;
+}
+#contact .container .contacInfo .snsWrap ul li a {
+  color: rgba(25, 26, 30, 0.8);
+}
+#contact .container .contacInfo .snsWrap ul li a i {
+  font-size: 21px;
+  position: relative;
+  z-index: 10;
+}
+#contact .container .contacInfo .snsWrap ul li:last-child a i {
+  font-size: 18px;
 }
 
 /************************** 

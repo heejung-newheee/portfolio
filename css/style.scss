@@ -13,12 +13,14 @@ section {
     padding: 80px 80px;
     height: inherit;
     margin: auto;
+    position: relative;
     z-index: 1;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 20px;
 }
+$montserrat: 'Montserrat', sans-serif;
 /************************* 
  BG 
  *************************/
@@ -584,7 +586,54 @@ WORK Subpage Detail
     }
  }
 
+/************************** 
+Contact us
+ **************************/
+#contact {
+    .container {
+        .contacInfo {
+            .touch {
+                font-family: $montserrat;
+                margin-bottom: 30px;
+            }
+            .myInfo {
+                div {
+                    padding-bottom: 30px;
+                    p {
+                        font-family: $montserrat;
+                        padding-top: 10px;
+                        a {font-family: $montserrat;color: #000;}
+                    }
+                }
 
+                strong { font-family: $montserrat;}
+            }
+            .snsWrap {
+                ul {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 30px;
+                    li {
+                        padding-right: 30px;
+                        a {
+                            color:rgba(25, 26, 30, 0.8);
+                            i {
+                                font-size: 21px;
+                                position: relative;
+                                z-index: 10;
+                            }
+                        }
+                        &:last-child a i{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
 /************************** 
 Media Query
  **************************/
