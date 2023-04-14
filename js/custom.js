@@ -76,14 +76,20 @@ render();
 ----------------------*/
 
  $(document).ready(function() {
-  $('nav ul li a, .menuBar').mouseover(function(){
-
+  $('nav ul li a, .menuBar, .line, .logo, .info').mouseover(function(){
     if($('#cursor').hasClass('point')){
         $('#cursor').removeClass('point');
         console.log("no")
     } else {
         $('#cursor').addClass('point');
         console.log("yes")
+    }  
+  });
+  $('nav ul li a, .menuBar, .line, .logo, .info').mouseleave(function(){
+
+    if($('#cursor').hasClass('point')){
+        $('#cursor').removeClass('point');
+        console.log("no")
     }
   
   });
