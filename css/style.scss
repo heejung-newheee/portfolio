@@ -24,7 +24,7 @@ $montserrat: 'Montserrat', sans-serif;
 /************************* 
  BG 
  *************************/
-
+ $waveWid:500px;
  .grayBg {
     background-color: #f7f7f7;
  }
@@ -34,10 +34,10 @@ $montserrat: 'Montserrat', sans-serif;
     top: 50%;
     left: 50%;
     background: #0af;
-    width: 500px;
-    height: 500px;
-    margin-left: -250px;
-    margin-top: -250px;
+    width: $waveWid;
+    height: $waveWid;
+    margin-left: -#{$waveWid/2};
+    margin-top: -#{$waveWid/2};
     transform-origin: 50% 48%;
     border-radius: 45%;
     animation: drift 3000ms infinite linear;
@@ -388,6 +388,8 @@ About Me
 }
 .timeWrap {
     position: relative;
+    width: 80%;
+    margin-left: 20%;
 
     &::before{
         content: "";
@@ -397,7 +399,7 @@ About Me
         height: 100%;
         background-color: #292929;
         position: absolute;        
-        left: 10%; top:0;
+        left: 100px; top:0;
     }
     .timeLine {
         display: flex;
@@ -410,7 +412,7 @@ About Me
             clear: both;
             font-size: 48px;
             position: absolute;
-            left: 9.5%;
+            left: 94px;
             top: -33px;
             height: 100%;
         }
@@ -482,18 +484,19 @@ WORK
             div {
                 padding-bottom: 7px;
              }
-             .projectCate { font-size: 0.6vw; color: #999;}
+             
              .projectTit {
                 font-family: 'Montserrat', sans-serif;
-                font-size: 1.2vw;
+                font-size: 26px;
                 font-weight: bold;
              }
+             .projectCate { font-size: 13px; color: #999;}
              .projectSub {
-                font-size: 0.7vw;
+                font-size: 14px;
                 color: #777;
              }
              .projectDo {
-                font-size: 0.7vw;
+                font-size: 13px;
                 display: flex;
                 flex-wrap: wrap;
                 padding-top: 20px;
@@ -638,6 +641,10 @@ Contact us
 Media Query
  **************************/
  @media only screen and (max-width:1399px) {
+    // NAV 
+    .menuBar.menuOpen span:last-child { bottom: 0.7vw;}
+    .container { padding:80px 100px;}
+    // skill 
     .skill-wrap {
         > div {
             width: calc((100% - 2vw)/3);
@@ -646,6 +653,10 @@ Media Query
     }
  }
  @media only screen and (max-width:1023px) {
+    //NAV
+    .menuBar.menuOpen span:first-child { top: 2vw;}
+    .menuBar.menuOpen span:last-child { bottom: 0.4vw;}
+    .container { padding:80px 80px;}
     .container h1 {
         font-size:7vw;
     }
@@ -657,6 +668,7 @@ Media Query
         
         span { width: 4vw;margin:0 0 1vw;}
     }
+    // work 
     #work ul li {
         width: calc((100% - 8vw) / 2);
         margin: 2vw;
@@ -677,9 +689,32 @@ Media Query
             margin-right: 0;
         }
     }
+    // about 
+    .timeWrap {
+        width: 90%;
+        margin-left: 10%;
+    
+        &::before{
+            left: 80px;
+        }
+        .timeLine {
+            &::before {
+                left: 74px;
+            }    
+        }
+    }
+    
  }
 
  @media only screen and (max-width:767px) {
+    .menuBar.menuOpen span:first-child { top: 3vw; }
+    .menuBar.menuOpen span:last-child { bottom: 0.5vw; }
+    nav ul {
+        width: 80%;
+        li a {
+            font-size: 9vw;
+        }
+    }
     .container { padding: 80px 3vw 80px 4vw;}
     .logo { top: 26px; left:20px; transform: rotate(0deg);}
     .info { display: none; }
@@ -697,19 +732,68 @@ Media Query
             margin: 1vw 0;
         }
     }
+    .wave {
+        width: 300px;
+        height: 300px;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+
     #work ul li {
         width: calc(100% - 4vw);
         margin: 2vw 0vw 2vw 1.2vw;
-
+        .workInfo {
+            padding:5%;
+            .projectTit {
+                font-size: 6vw;
+            }
+            .projectCate {
+                font-size: 3.6vw;
+            }
+            .projectSub {
+                font-size: 3.4vw;;
+            }
+        }
     }
     .workSub { 
         padding: 17vw 5vw;
         
         .detail .deMobile {
             width: 100%;
-        }        
-        
+        }  
     }
+    // about 
+    .timeWrap {
+        width: 100%;
+        margin-left: 0;
+    
+        &::before{
+            left: 36px;
+        }
+        .timeLine {
+            &::before {
+                left: 30px;
+            }    
+        }
+    }
+    .eduWrap { 
+        padding: 3vw 4vw; 
+        > div.eduList {
+            width: 100%;
+            p {
+                color: #787878;
+                padding-top: 5px;
+                font-weight: bold;
+            }
+        }
+        > div:last-child {
+            text-align: left;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color:#787878;
+        }
+    }
+
  }
 
 
