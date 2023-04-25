@@ -5,6 +5,11 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
+body::-webkit-scrollbar { width:6px; }
+body::-webkit-scrollbar-track { background-color: #eaeaea; border-left: 0px solid #a1a1a1; }
+body::-webkit-scrollbar-thumb { background-color: #a1a1a1; }
+body::-webkit-scrollbar-thumb:hover { background-color: #aaa; }
+
 section {
     min-height: 100vh;
 }
