@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>유희정</title>
+        <link rel="shortcut icon" href="/img/favi/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="whiteBg">
+            <!-- HEADER  -->
+            <header>
+                <!-- mouse cursor  -->
+                <div id="cursor">
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="my-blur" />
+                            <feColorMatrix
+                                in="my-blur"
+                                mode="matrix"
+                                values="
+                                1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 20 -8"
+                                result="my-gooey" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <a href="index.html" class="logo">YOOHEEJUNG.</a>
+                <div class="menuBar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <!-- <li><a href="">Carrer</a></li> -->
+                        <!-- <li><a href="resume.html">Resume</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="info">
+                <span
+                    ><b>South Korea, Seoul</b
+                    ><b
+                        ><a
+                            href="https://mail.naver.com/write/popup?srvid=note&amp;to=aldls2311@naver.com"
+                            target="_blank"
+                            class="btn-mail"
+                            >aldls2311@naver.com</a
+                        ></b
+                    ></span
+                >
+            </div>
+            <!-- HEADER END -->
+
+            <!-- SECTION  -->
+            <section id="contact">
+                <div class="container" data-aos="fade-up" data-aos-duration="600">
+                    <h2>Resume</h2>
+                    <div>
+                        <div>
+                            저는 프론트엔드 개발자로 지원하고자 합니다. 제가 가지고 있는 강점 중 하나는 침착하며 빠른
+                            대처 능력입니다. 이전 회사에서도 예상치 못한 상황이 발생해도 평소에 쌓아온 경험과 노하우로
+                            빠르게 문제를 해결할 수 있었습니다. 또한, 사람들과 잘 지내는 것도 제 강점 중 하나입니다.
+                            제가 다양한 사람들과 일하며 지낸 경험을 통해, 상대방의 입장을 이해하고 존중하는 태도를
+                            갖추고 있습니다. 이러한 강점들을 바탕으로, 프론트엔드 개발자로서 회사의 성장과 발전에
+                            기여하고 싶습니다. 또한, 제 이력서에서 확인하실 수 있듯이, 갑작스러운 상황에서도 적극적으로
+                            대처하는 자세를 갖추고 있습니다. 예를 들어, 이전 회사에서 마스크 사업을 시작하게 된
+                            상황에서는 야근을 마다 않고 상세페이지, 패키지디자인, CS, 운영 관리와 판매, 주문량 폭주로
+                            생산팀 일손이 부족할때는 생산과 포장까지 도우며 직접 참여했습니다. 이러한 경험을 통해, 제가
+                            언제나 적극적으로 도전하는 자세를 갖추고 있으며, 새로운 일에 대한 도전을 기다리고 있습니다.
+                            감사합니다.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION END -->
+
+            <footer>
+                <div class="container">&copy 2024 YOOHEEJUNG Portfolio</div>
+            </footer>
+        </div>
+
+        <!-- SCRIPT  -->
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

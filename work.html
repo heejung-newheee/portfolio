@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>유희정</title>
+        <link rel="shortcut icon" href="/img/favi/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="whiteBg">
+            <!-- HEADER  -->
+            <header>
+                <!-- mouse cursor  -->
+                <div id="cursor">
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="my-blur" />
+                            <feColorMatrix
+                                in="my-blur"
+                                mode="matrix"
+                                values="
+                                1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 20 -8"
+                                result="my-gooey" />
+                        </filter>
+                    </defs>
+                </svg>
+                <a href="index.html" class="logo">YOOHEEJUNG.</a>
+                <div class="menuBar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <!-- <li><a href="">Carrer</a></li> -->
+                        <!-- <li><a href="resume.html">Resume</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="info">
+                <span
+                    ><b>South Korea, Seoul</b
+                    ><b
+                        ><a
+                            href="https://mail.naver.com/write/popup?srvid=note&amp;to=aldls2311@naver.com"
+                            target="_blank"
+                            class="btn-mail"
+                            >aldls2311@naver.com</a
+                        ></b
+                    ></span
+                >
+            </div>
+            <!-- HEADER END -->
+
+            <!-- SECTION  -->
+            <section id="work">
+                <div class="container">
+                    <h2>My Work</h2>
+                    <ul>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://www.tutorang.site/" target="_blank">
+                                <div class="workImg"><img src="img/work-tutorang.jpg" alt="project" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Tutorang</div>
+                                    <div class="projectCate">팀 프로젝트(5인)</div>
+                                    <div class="projectSub">[참여도] 기획•프론트엔드 30%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                        <span>TypeScript</span>
+                                        <span>React</span>
+                                        <span>github</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://dulleo-bomi.vercel.app/" target="_blank">
+                                <div class="workImg"><img src="img/work-dulleobomi.jpg" alt="project" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">둘러보미</div>
+                                    <div class="projectCate">팀 프로젝트(5인)</div>
+                                    <div class="projectSub">[참여도] 기획•디자인•프론트엔드 30%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                        <span>TypeScript</span>
+                                        <span>React</span>
+                                        <span>github</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://triptoday.vercel.app/" target="_blank">
+                                <div class="workImg"><img src="img/work-triptoday.jpg" alt="project" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Trip Today</div>
+                                    <div class="projectCate">팀 프로젝트(5인)</div>
+                                    <div class="projectSub">[참여도] 기획•디자인•프론트엔드 30%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                        <span>React</span>
+                                        <span>github</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://www.embercns.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-ember.jpg" alt="project" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Ember C&S</div>
+                                    <div class="projectCate">반응형 회사 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://seoulinternational.org/p" target="_blank">
+                                <div class="workImg"><img src="img/work-tlci-02.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Seoul International Academy</div>
+                                    <div class="projectCate">반응형 국제학교 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•영상•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://aranahome.ddcn.kr:121/index.html" target="_blank">
+                                <div class="workImg"><img src="img/work-arana-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">arana</div>
+                                    <div class="projectCate">반응형 회사 사이트</div>
+                                    <div class="projectSub">[참여도] 디자인•영상•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="design publishing planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://interprep.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-interprep-06.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://whatthewear.shop/" target="_blank">
+                                <div class="workImg"><img src="img/work-whatthewear-02.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Whatthe Wear</div>
+                                    <div class="projectCate">반응형 의류 쇼핑몰 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://whatthewear.shop/" target="_blank">
+                                <div class="workImg"><img src="img/work-whatthewear-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Whatthe Wear</div>
+                                    <div class="projectCate">반응형 의류 쇼핑몰</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://soonpoong.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-soonpoong-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Soonpoong Mask</div>
+                                    <div class="projectCate">반응형 쇼핑몰</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://whattheshopping.com/" target="_blank">
+                                <div class="workImg">
+                                    <img src="img/work-whattheshopping-01.jpg" alt="project-01" />
+                                </div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Whatthe Shopping</div>
+                                    <div class="projectCate">반응형 회사 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://whatthegroup.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-whatthegroup.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">WhattheGroup</div>
+                                    <div class="projectCate">반응형 회사 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://utu.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-utu-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">UTU</div>
+                                    <div class="projectCate">반응형 커뮤니티 플랫폼 신규</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://unoarte.org/" target="_blank">
+                                <div class="workImg"><img src="img/work-unoarte.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Unoarte</div>
+                                    <div class="projectCate">반응형 회사홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://polarisguest.com/" target="_blank">
+                                <div class="workImg"><img src="img/work-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Polaris Guest</div>
+                                    <div class="projectCate">반응형 게스트하우스</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://englstory.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-englstory-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Englstory</div>
+                                    <div class="projectCate">반응형 인강사이트 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="design publishing planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://interprep.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-interprep-05.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://www.interprepgrad.com/" target="_blank">
+                                <div class="workImg"><img src="img/work-interprepgrad.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep Grad</div>
+                                    <div class="projectCate">반응형 대학원 홈페이지 신규 구축</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-brochure-11.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Theiprep Brochure</div>
+                                    <div class="projectCate">컨설팅 브로셔</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="workImg"><img src="img/work-brochure-10.jpg" alt="project-01" /></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Theiprep Brochure</div>
+                                <div class="projectCate">프로그램 브로셔</div>
+                                <div class="projectSub">[참여도] 디자인 100%</div>
+                                <div class="projectDo">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-brochure-09.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Theiprep Brochure</div>
+                                    <div class="projectCate">주니어리딩 브로셔</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="workImg"><img src="img/work-brochure-08.jpg" alt="project-01" /></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Theiprep Brochure</div>
+                                <div class="projectCate">보딩스쿨 브로셔</div>
+                                <div class="projectSub">[참여도] 디자인 100%</div>
+                                <div class="projectDo">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-brochure-04.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep Brochure</div>
+                                    <div class="projectCate">여름특강 브로셔</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://interprep.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-interprep-04.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-bagelhouse.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">BagelHouse</div>
+                                    <div class="projectCate">반응형 게스트하우스•예약 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://www.whatthetv.com/" target="_blank">
+                                <div class="workImg"><img src="img/work-whatthetv.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Whatthe TV</div>
+                                    <div class="projectCate">MCN 회사 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="workImg"><img src="img/work-brochure-06.jpg" alt="project-01" /></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Interprep Brochure</div>
+                                <div class="projectCate">여름특강 브로셔</div>
+                                <div class="projectSub">[참여도] 디자인 100%</div>
+                                <div class="projectDo">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-brochure-07.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Theiprep Brochure</div>
+                                    <div class="projectCate">프로그램 브로셔</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="design publishing planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://theiprep.com/" target="_blank">
+                                <div class="workImg"><img src="img/work-theiprep-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">The I Prep</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://interprep.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-interprep-03.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 리뉴얼</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="workImg"><img src="img/work-brochure-03.jpg" alt="project-01" /></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Interprep Brochure</div>
+                                <div class="projectCate">여름특강 브로셔</div>
+                                <div class="projectSub">[참여도] 디자인 100%</div>
+                                <div class="projectDo">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="workImg"><img src="img/work-brochure-02.jpg" alt="project-01" /></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Interprep Brochure</div>
+                                <div class="projectCate">여름특강 브로셔</div>
+                                <div class="projectSub">[참여도] 디자인 100%</div>
+                                <div class="projectDo">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="design" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" target="_blank">
+                                <div class="workImg"><img src="img/work-brochure-01.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Interprep Brochure</div>
+                                    <div class="projectCate">대학 컨설팅 브로셔</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="planning" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://daechi720.com/" target="_blank">
+                                <div class="workImg"><img src="img/work-daechi.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Daechi 720</div>
+                                    <div class="projectCate">반응형 학원 홈페이지 신규 구축</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design publishing" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://e-cornerstone.co.kr/" target="_blank">
+                                <div class="workImg"><img src="img/work-cornerstone.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Cornerstone</div>
+                                    <div class="projectCate">반응형 회사 홈페이지</div>
+                                    <div class="projectSub">[참여도] 디자인•퍼블리싱 100%</div>
+                                    <div class="projectDo">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="design publishing planning" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="https://interprep.co.kr/" target="_blank">
+                            <div class="workImg"><img src="img/work-.jpg" alt="project-01"></div>
+                            <div class="workInfo">
+                                <div class="projectTit">Interprep</div>
+                                <div class="projectCate">반응형 학원 홈페이지 신규 구축</div>
+                                <div class="projectSub">[참여도] 퍼블리싱 80%</div>
+                                <div class="projectDo">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li> -->
+                        <li class="design detail" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="work/liferenewal.html" target="_blank">
+                                <div class="workImg"><img src="img/work-nmn.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Life Renewal</div>
+                                    <div class="projectCate">영양 보조제 NMN</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design detail" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="work/kusmask.html" target="_blank">
+                                <div class="workImg"><img src="img/work-kus.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">KUS Mask</div>
+                                    <div class="projectCate">마스크 상세페이지</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design detail" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="work/whatthewear.html" target="_blank">
+                                <div class="workImg"><img src="img/work-whatthewear.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Whatthe Wear</div>
+                                    <div class="projectCate">의류 상세페이지</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="design detail" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="work/soonpoong.html" target="_blank">
+                                <div class="workImg"><img src="img/work-soon-color.jpg" alt="project-01" /></div>
+                                <div class="workInfo">
+                                    <div class="projectTit">Soonpoong Mask</div>
+                                    <div class="projectCate">마스크 상세페이지</div>
+                                    <div class="projectSub">[참여도] 디자인 100%</div>
+                                    <div class="projectDo">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- SECTION END -->
+
+            <footer>
+                <div class="container">&copy 2024 YOOHEEJUNG Portfolio</div>
+            </footer>
+        </div>
+
+        <!-- SCRIPT  -->
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

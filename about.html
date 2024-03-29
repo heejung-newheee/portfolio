@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>유희정</title>
+        <link rel="shortcut icon" href="/img/favi/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="whiteBg">
+            <!-- HEADER  -->
+            <header>
+                <!-- mouse cursor  -->
+                <div id="cursor">
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="my-blur" />
+                            <feColorMatrix
+                                in="my-blur"
+                                mode="matrix"
+                                values="
+                                1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 20 -8"
+                                result="my-gooey" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <a href="index.html" class="logo">YOOHEEJUNG.</a>
+                <div class="menuBar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <!-- <li><a href="">Carrer</a></li> -->
+                        <!-- <li><a href="resume.html">Resume</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="info">
+                <span
+                    ><b>South Korea, Seoul</b
+                    ><b
+                        ><a
+                            href="https://mail.naver.com/write/popup?srvid=note&amp;to=aldls2311@naver.com"
+                            target="_blank"
+                            class="btn-mail"
+                            >aldls2311@naver.com</a
+                        ></b
+                    ></span
+                >
+            </div>
+            <!-- HEADER END -->
+
+            <!-- SECTION  -->
+            <section id="about">
+                <!-- about  -->
+                <div class="container" data-aos="fade-up">
+                    <h2>About Me</h2>
+
+                    <!-- 소개  -->
+                    <div>
+                        <div>
+                            <img src="" alt="" />
+                        </div>
+                        <div>
+                            웹 표준을 준수하고 유지보수를 고려한 코드를 작성하기 위해 노력하며, 다양한 사용자를 차별하지
+                            않고, 사용자와 서비스 목적을 고려한 웹을 만들기 위해 노력합니다. 새로운 지식에 대한 두려움이
+                            없습니다. 새로운 언어와 기술에 관심이 많고 Javascript, React, Typescript, Next.js, Git 등
+                            다양한 지식을 배우고 적용합니다. 더 좋은 서비스를 만들기위해 기획자, 디자이너, 개발자와
+                            원활하게 협업하려고 노력합니다. 다른 분야를 이해하고 도와가며 더 좋은 결과물을 만들어냅니다.
+                        </div>
+                    </div>
+                </div>
+                <!-- skill -->
+                <div id="skill" class="container" data-aos="fade-up" data-aos-duration="600">
+                    <!-- 스킬  -->
+                    <!-- 애니메이션 바  -->
+                    <h2>Skill</h2>
+                    <div class="skill-wrap">
+                        <div>
+                            HTML/CSS/SCSS
+                            <div class="progress-wrap" data-num="90">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            Javascript/Jquery
+                            <div class="progress-wrap" data-num="80">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            React
+                            <div class="progress-wrap" data-num="60">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            Typescript
+                            <div class="progress-wrap" data-num="50">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            NextJS
+                            <div class="progress-wrap" data-num="30">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            Photoshop/Illustrator
+                            <div class="progress-wrap" data-num="90">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- timeline  -->
+                <div class="container" data-aos="fade-up" data-aos-duration="600">
+                    <h2>Timeline</h2>
+                    <div class="timeWrap">
+                        <div class="timeLine" data-aos="fade-up" data-aos-duration="700" data-aos-delay="">
+                            <div></div>
+                            <div>2017-23</div>
+                            <div>(주)아이홀딩즈</div>
+                        </div>
+                        <div class="timeLine" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            <div></div>
+                            <div>2017</div>
+                            <div>(주) LCJ</div>
+                        </div>
+                        <div class="timeLine" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            <div></div>
+                            <div>2016</div>
+                            <div>클럽 제이제이</div>
+                        </div>
+                        <div class="timeLine" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                            <div></div>
+                            <div>2013-15</div>
+                            <div>(주)소셜미디어네트웍스</div>
+                        </div>
+                        <div class="timeLine" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+                            <div></div>
+                            <div>2012</div>
+                            <div>(주)디자인소키</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- education -->
+                <div class="container grayBg" data-aos="fade-up" data-aos-duration="600">
+                    <h2>Education</h2>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            실무형 프론트엔드 엔지니어 양성과정
+                            <p>Javascript, React, TypeScript, 자료구조, CS, 알고리즘, 팀 프로젝트 진행</p>
+                        </div>
+                        <div>
+                            스파르타코딩클럽
+                            <p>2023.05 - 2023.09</p>
+                        </div>
+                    </div>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            웹개발 종합(프로그래밍 실무, 풀스택) 응용SW 엔지니어링 수료
+                            <p>Javascript, Python, mangoDB를 이용한 풀스택 프로젝트 구현</p>
+                        </div>
+                        <div>
+                            스파르타코딩클럽
+                            <p>2023.03 - 2023.04</p>
+                        </div>
+                    </div>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            응용SW 엔지니어링 수료
+                            <p>JAVA 프로그래밍 입문 교육</p>
+                        </div>
+                        <div>
+                            더조은아카데미
+                            <p>2022.12 - 2023.01</p>
+                        </div>
+                    </div>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            Javascript, jQuery 응용SW 엔지니어링 수료
+                            <p>Javascript,Jquery</p>
+                        </div>
+                        <div>
+                            더조은아카데미
+                            <p>2018.01 - 2018.02</p>
+                        </div>
+                    </div>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            PHP+MySQL 프로그래밍 응용SW 엔지니어링 수료
+                            <p>PHP+MySQL 프로그래밍</p>
+                        </div>
+                        <div>
+                            더조은아카데미
+                            <p>2017.10 - 2017.12</p>
+                        </div>
+                    </div>
+                    <div class="eduWrap">
+                        <div class="eduList">
+                            디지털 컨버전스 UI/UX엔지니어링, 프론트앤드 양성과정 수료
+                            <p>웹표준, 웹접근성, Javascript, jquery, html, css, PHP, MySQL, 팀 프로젝트 진행</p>
+                        </div>
+                        <div>
+                            그린컴퓨터아카데미
+                            <p>2016.09 - 2017.02</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate -->
+                <div class="container" data-aos="fade-up" data-aos-duration="600">
+                    <h2>Certificate</h2>
+                    <div class="certificateList">
+                        <div>시각디자인 산업기사<span>2015.03</span></div>
+                    </div>
+                    <div class="certificateList">
+                        <div>컬러리스트 산업기사<span>2013.03</span></div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION END -->
+
+            <footer>
+                <div class="container">&copy 2024 YOOHEEJUNG Portfolio</div>
+            </footer>
+        </div>
+
+        <!-- SCRIPT  -->
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

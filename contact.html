@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>유희정</title>
+        <link rel="shortcut icon" href="/img/favi/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="whiteBg">
+            <!-- HEADER  -->
+            <header>
+                <!-- mouse cursor  -->
+                <div id="cursor">
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="my-blur" />
+                            <feColorMatrix
+                                in="my-blur"
+                                mode="matrix"
+                                values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 20 -8"
+                                result="my-gooey" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <a href="index.html" class="logo">YOOHEEJUNG.</a>
+                <div class="menuBar">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <!-- <li><a href="">Carrer</a></li> -->
+                        <!-- <li><a href="resume.html">Resume</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="info">
+                <span
+                    ><b>South Korea, Seoul</b
+                    ><b
+                        ><a
+                            href="https://mail.naver.com/write/popup?srvid=note&amp;to=aldls2311@naver.com"
+                            target="_blank"
+                            class="btn-mail"
+                            >aldls2311@naver.com</a
+                        ></b
+                    ></span
+                >
+            </div>
+            <!-- HEADER END -->
+
+            <!-- SECTION  -->
+            <section id="contact">
+                <div class="container" data-aos="fade-up" data-aos-duration="600">
+                    <h2>Contact Us</h2>
+                    <div class="contacInfo">
+                        <div class="touch">Get in Touch !<img src="" alt="" /></div>
+                        <div class="myInfo">
+                            <div>
+                                <strong>Email</strong>
+                                <p>
+                                    <a
+                                        href="https://mail.naver.com/write/popup?srvid=note&amp;to=aldls2311@naver.com"
+                                        target="_blank"
+                                        class="btn-mail"
+                                        >aldls2311@naver.com</a
+                                    >
+                                </p>
+                            </div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:01091355935">+82 +10 9135 5935</a></p>
+                            </div>
+
+                            <div>
+                                <strong>Area</strong>
+                                <p>Seoul,Republic of KOREA</p>
+                            </div>
+                        </div>
+
+                        <div class="snsWrap">
+                            <!-- <div>SNS</div> -->
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://github.com/heejung-newheee"
+                                        target="
+                                    _blank"
+                                        ><i class="fab fa-git"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com/new.heee/"
+                                        target="
+                                    _blank"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://newheee.tistory.com/"
+                                        target="
+                                    _blank"
+                                        ><i class="fas fa-paper-plane"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION END -->
+
+            <footer>
+                <div class="container">&copy 2024 YOOHEEJUNG Portfolio</div>
+            </footer>
+        </div>
+
+        <!-- SCRIPT  -->
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
