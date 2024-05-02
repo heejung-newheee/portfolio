@@ -6,6 +6,9 @@ font-family: 'Noto Sans KR', sans-serif;
 */
 section {
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
 }
 
 .container {
@@ -14,7 +17,6 @@ section {
   height: inherit;
   margin: auto;
   position: relative;
-  z-index: 1;
 }
 
 h2 {
@@ -99,7 +101,7 @@ CURSOR
 *************************/
 #cursor {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   filter: url("#goo");
   transform-origin: center;
 }
@@ -205,6 +207,7 @@ header.open .logo {
   margin-right: 2.3vw;
   margin-top: 2.3vw;
   float: right;
+  cursor: pointer;
 }
 
 .menuBar span {

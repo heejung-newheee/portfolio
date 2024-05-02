@@ -12,6 +12,9 @@ font-family: 'Noto Sans KR', sans-serif;
 
 section {
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
 }
 .container {
     max-width: 1400px;
@@ -19,7 +22,7 @@ section {
     height: inherit;
     margin: auto;
     position: relative;
-    z-index: 1;
+    // z-index: 1;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -29,12 +32,12 @@ $montserrat: 'Montserrat', sans-serif;
 /************************* 
  BG 
  *************************/
- $waveWid:500px;
- .grayBg {
+$waveWid: 500px;
+.grayBg {
     background-color: #f7f7f7;
- }
- .wave {
-    opacity: .4;
+}
+.wave {
+    opacity: 0.4;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,32 +49,32 @@ $montserrat: 'Montserrat', sans-serif;
     transform-origin: 50% 48%;
     border-radius: 45%;
     animation: drift 3000ms infinite linear;
-  }
-  .wave.-three {
+}
+.wave.-three {
     animation: drift 5000ms infinite linear;
-    opacity: .6;
-  }
-  
-  .wave.-two {
+    opacity: 0.6;
+}
+
+.wave.-two {
     animation: drift 7000ms infinite linear;
-    opacity: .2;
+    opacity: 0.2;
     background: yellow;
     border-radius: 45%;
-  }
-  
-  .box:after {
+}
+
+.box:after {
     content: '';
     display: block;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, 0.5));
     z-index: 11;
     transform: translate3d(0, 0, 0);
-  }
-  
-  .title {
+}
+
+.title {
     position: absolute;
     left: 0;
     top: 0;
@@ -83,15 +86,19 @@ $montserrat: 'Montserrat', sans-serif;
     color: white;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
-    letter-spacing: .4em;
+    letter-spacing: 0.4em;
     font-size: 24px;
-    text-shadow: 0 1px 0 rgba(black, .1);
-    text-indent: .3em;
-  }
-  @keyframes drift {
-    from { transform: rotate(0deg); }
-    from { transform: rotate(360deg); }
-  }
+    text-shadow: 0 1px 0 rgba(black, 0.1);
+    text-indent: 0.3em;
+}
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
 
 /************************* 
 CURSOR  
@@ -107,10 +114,10 @@ $bg4: #ffb924;
 
 #cursor {
     position: absolute;
-    z-index: 1;
-    filter:url('#goo');
-    transform-origin: center;   
-    
+    z-index: 0;
+    filter: url('#goo');
+    transform-origin: center;
+
     .blob {
         position: absolute;
         margin: -#{$diameter1/2} 0 0 -#{$diameter1/2};
@@ -121,69 +128,72 @@ $bg4: #ffb924;
         top: 50%;
         left: 50%;
         pointer-events: none;
-        
+
         &:nth-child(2) {
-        width: $diameter2;
-        height: $diameter2;
-        margin: -#{$diameter2/2} 0 0 -#{$diameter2/2};
-        z-index: -1;
-        background: $bg2;
+            width: $diameter2;
+            height: $diameter2;
+            margin: -#{$diameter2/2} 0 0 -#{$diameter2/2};
+            z-index: -1;
+            background: $bg2;
         }
-        
+
         &:nth-child(3) {
-        width: $diameter3;
-        height: $diameter3;
-        margin: -#{$diameter3/2} 0 0 -#{$diameter3/2};
-        z-index: -2;
-        background: $bg3;
+            width: $diameter3;
+            height: $diameter3;
+            margin: -#{$diameter3/2} 0 0 -#{$diameter3/2};
+            z-index: -2;
+            background: $bg3;
         }
-        
+
         &:nth-child(4) {
-        width: $diameter4;
-        height: $diameter4;
-        margin: -#{$diameter4/2} 0 0 -#{$diameter4/2};
-        z-index: -3;
-        background: $bg4;
+            width: $diameter4;
+            height: $diameter4;
+            margin: -#{$diameter4/2} 0 0 -#{$diameter4/2};
+            z-index: -3;
+            background: $bg4;
         }
     }
 
     // 호버시 커서 transform
-    & + svg { display: none;}
-    &.point { z-index: 0; }
+    & + svg {
+        display: none;
+    }
+    &.point {
+        z-index: 0;
+    }
     &.point .blob {
-        width: $diameter1*2;
-        height: $diameter1*2;
+        width: $diameter1 * 2;
+        height: $diameter1 * 2;
         background-color: coral;
-        margin: -#{($diameter1*2)/2} 0 0 -#{($diameter1*2)/2};
+        margin: -#{($diameter1 * 2) / 2} 0 0 -#{($diameter1 * 2) / 2};
 
         &:nth-child(2) {
-            width: $diameter2*2;
-            height: $diameter2*2;
-            margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
+            width: $diameter2 * 2;
+            height: $diameter2 * 2;
+            margin: -#{($diameter2 * 2) / 2} 0 0 -#{($diameter2 * 2) / 2};
         }
-        
+
         &:nth-child(3) {
-            width: $diameter3*2;
-            height: $diameter3*2;
-            margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
+            width: $diameter3 * 2;
+            height: $diameter3 * 2;
+            margin: -#{($diameter2 * 2) / 2} 0 0 -#{($diameter2 * 2) / 2};
         }
-        
+
         &:nth-child(4) {
-        width: $diameter4*2;
-        height: $diameter4*2;
-        margin: -#{($diameter2*2)/2} 0 0 -#{($diameter2*2)/2};
+            width: $diameter4 * 2;
+            height: $diameter4 * 2;
+            margin: -#{($diameter2 * 2) / 2} 0 0 -#{($diameter2 * 2) / 2};
         }
     }
-  
 }
 /**************************
 header 
 **************************/
 header {
-    width:100%;
+    width: 100%;
     height: 100px;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 10;
     transition: all 0.3s;
@@ -204,7 +214,7 @@ header {
     letter-spacing: -1;
 }
 header.open .logo {
-    color: #fff!important;    
+    color: #fff !important;
 }
 .whiteBg .logo {
     color: #000;
@@ -213,9 +223,10 @@ header.open .logo {
 .menuBar {
     margin-right: 2.3vw;
     margin-top: 2.3vw;
-    float: right;    
+    float: right;
+    cursor: pointer;
 }
-.menuBar span { 
+.menuBar span {
     position: relative;
     display: block;
     width: 2vw;
@@ -229,8 +240,8 @@ header.open .logo {
 }
 .menuBar span:first-child {
     top: 0;
-    transform: rotate(0); 
-    -webkit-transform:rotate(0);
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
 }
 .menuBar span:nth-child(2) {
     opacity: 1;
@@ -241,12 +252,12 @@ header.open .logo {
     -webkit-transform: rotate(0);
 }
 .menuBar.menuOpen span {
-    background-color: #fff!important;
+    background-color: #fff !important;
 }
 .menuBar.menuOpen span:first-child {
     top: 0.6vw;
-    transform: rotate(45deg); 
-    -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .menuBar.menuOpen span:nth-child(2) {
     opacity: 0;
@@ -262,7 +273,8 @@ NAV
  **************************/
 
 nav {
-    width: 100%; height: 100vh;
+    width: 100%;
+    height: 100vh;
     background-color: #070707f0;
     display: none;
     transition: all 0.8s;
@@ -290,7 +302,8 @@ nav ul li a {
 
 /* MAIN */
 .main {
-    width: 100%; height: 100vh;
+    width: 100%;
+    height: 100vh;
     background: #000;
 }
 .main::after {
@@ -300,18 +313,21 @@ nav ul li a {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: /*url(../img/line.svg) center*/ rgba(25, 26, 30, 0.8) ;
+    background: /*url(../img/line.svg) center*/ rgba(25, 26, 30, 0.8);
     background-size: contain;
 }
 video {
-    width: 100%; height: auto;
-    min-width: 100%; min-height: 100%;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
-    left: 0; bottom: 0;
-    object-fit : cover;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
     opacity: 0.5;
 }
-.container h1{
+.container h1 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -337,7 +353,7 @@ video {
     color: #9a9a9a;
 }
 .info::before {
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     width: 89px;
@@ -365,8 +381,8 @@ About Me
     flex-wrap: wrap;
     justify-content: space-between;
     > div {
-        width: calc((100% - 2vw)/6);
-        padding:20px 10px;
+        width: calc((100% - 2vw) / 6);
+        padding: 20px 10px;
         background-color: #f7f7f7;
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
@@ -375,7 +391,8 @@ About Me
         color: #787878;
 
         .progress-wrap {
-            width: 100%; height: 10px;
+            width: 100%;
+            height: 10px;
             margin: 0 auto;
             margin-top: 10px;
             border-radius: 5px;
@@ -384,7 +401,8 @@ About Me
 
             .bar {
                 position: absolute;
-                width: 0; height: 100%;
+                width: 0;
+                height: 100%;
                 border-radius: 5px;
                 background-color: #ffb924;
             }
@@ -396,15 +414,16 @@ About Me
     width: 80%;
     margin-left: 20%;
 
-    &::before{
-        content: "";
+    &::before {
+        content: '';
         display: block;
         clear: both;
         width: 1px;
         height: 100%;
         background-color: #292929;
-        position: absolute;        
-        left: 100px; top:0;
+        position: absolute;
+        left: 100px;
+        top: 0;
     }
     .timeLine {
         display: flex;
@@ -412,7 +431,7 @@ About Me
         width: 100%;
 
         &::before {
-            content: ".";
+            content: '.';
             display: block;
             clear: both;
             font-size: 48px;
@@ -422,14 +441,22 @@ About Me
             height: 100%;
         }
 
-        div {      
-            font-size: 15px;            
+        div {
+            font-size: 15px;
             line-height: 2.6;
             justify-content: space-between;
 
-            &:first-child {width: 20%;}
-            &:nth-child(2) {width: 20%;font-weight: bold;font-family: 'montserrat', sans-serif;}
-            &:nth-child(3) {font-weight: bold;}
+            &:first-child {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+                font-weight: bold;
+                font-family: 'montserrat', sans-serif;
+            }
+            &:nth-child(3) {
+                font-weight: bold;
+            }
         }
     }
 }
@@ -440,18 +467,23 @@ About Me
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #fff;
-    padding:1vw 2vw;
+    padding: 1vw 2vw;
     margin-bottom: 1vw;
 
     div {
-        &.eduList { width: 70%; font-weight: bold; }
-        &:last-child {text-align: right;font-size: 0.9em;}
+        &.eduList {
+            width: 70%;
+            font-weight: bold;
+        }
+        &:last-child {
+            text-align: right;
+            font-size: 0.9em;
+        }
         p {
             font-size: 0.8em;
             font-weight: 400;
-            color:#b9b9b9;
+            color: #b9b9b9;
         }
-
     }
 }
 
@@ -469,17 +501,17 @@ About Me
 /************************** 
 WORK 
  **************************/
- #work ul {
+#work ul {
     display: flex;
     flex-wrap: wrap;
 
     li {
-        width: calc((100% - 3vw)/3);
+        width: calc((100% - 3vw) / 3);
         margin: 1vw 0.5vw;
-        box-shadow:rgb(25 26 30 / 15%) 2px 2px 8px;
+        box-shadow: rgb(25 26 30 / 15%) 2px 2px 8px;
         transition: all 0.5s;
         &:hover {
-            box-shadow:rgb(25 26 30 / 15%) 15px 7px 8px;
+            box-shadow: rgb(25 26 30 / 15%) 15px 7px 8px;
         }
         a {
             color: #333;
@@ -488,37 +520,38 @@ WORK
             padding: 10%;
             div {
                 padding-bottom: 7px;
-             }
-             
-             .projectTit {
+            }
+
+            .projectTit {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 26px;
                 font-weight: bold;
-             }
-             .projectCate { font-size: 13px; color: #999;}
-             .projectSub {
+            }
+            .projectCate {
+                font-size: 13px;
+                color: #999;
+            }
+            .projectSub {
                 font-size: 14px;
                 color: #777;
-             }
-             .projectDo {
+            }
+            .projectDo {
                 font-size: 13px;
                 display: flex;
                 flex-wrap: wrap;
                 padding-top: 20px;
                 span {
                     display: inline-block;
-                    padding:3px 20px;
+                    padding: 3px 20px;
                     border-radius: 50px;
                     background-color: #f2f2f2;
                     margin-right: 5px;
                     margin-top: 5px;
-                 }
-             } 
+                }
+            }
         }
-
     }
-
- }
+}
 
 /************************** 
 WORK Subpage Detail
@@ -526,7 +559,7 @@ WORK Subpage Detail
 .subWrap {
     width: 90%;
     margin-right: 10%;
- }
+}
 .workSub {
     display: flex;
     flex-wrap: wrap;
@@ -537,10 +570,12 @@ WORK Subpage Detail
         padding: 5vw;
         margin-left: 4vw;
         box-sizing: border-box;
-        .dePc img {padding-bottom: 15px;}
+        .dePc img {
+            padding-bottom: 15px;
+        }
         .deMobile {
             width: 50%;
-            margin:0 auto;
+            margin: 0 auto;
             padding-top: 80px;
         }
         div p {
@@ -549,7 +584,6 @@ WORK Subpage Detail
             margin-bottom: 20px;
             text-align: center;
         }
-
     }
     .detailInfo {
         height: 100%;
@@ -575,24 +609,31 @@ WORK Subpage Detail
         }
         ul {
             margin: 25px 0;
-            li { list-style: disc outside none; margin-left: 1.2vw;}
-            
+            li {
+                list-style: disc outside none;
+                margin-left: 1.2vw;
+            }
         }
         .detailBtn {
             width: 100%;
 
-            .deBtn { 
-                font-family: 'Montserrat', sans-serif; font-size:12px;padding:10px 25px; border-radius: 30px;background-color: #ffb924; color: #fff;}
-            .deBtn:first-child{
+            .deBtn {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                padding: 10px 25px;
+                border-radius: 30px;
+                background-color: #ffb924;
+                color: #fff;
+            }
+            .deBtn:first-child {
                 float: left;
             }
-            .deBtn:last-child{
+            .deBtn:last-child {
                 float: right;
             }
         }
-        
     }
- }
+}
 
 /************************** 
 Contact us
@@ -610,11 +651,16 @@ Contact us
                     p {
                         font-family: $montserrat;
                         padding-top: 10px;
-                        a {font-family: $montserrat;color: #000;}
+                        a {
+                            font-family: $montserrat;
+                            color: #000;
+                        }
                     }
                 }
 
-                strong { font-family: $montserrat;}
+                strong {
+                    font-family: $montserrat;
+                }
             }
             .snsWrap {
                 ul {
@@ -624,65 +670,79 @@ Contact us
                     li {
                         padding-right: 30px;
                         a {
-                            color:rgba(25, 26, 30, 0.8);
+                            color: rgba(25, 26, 30, 0.8);
                             i {
                                 font-size: 21px;
                                 position: relative;
                                 z-index: 10;
                             }
                         }
-                        &:last-child a i{
+                        &:last-child a i {
                             font-size: 18px;
                         }
                     }
                 }
-                
             }
         }
     }
-
 }
 /************************** 
 Media Query
  **************************/
- @media only screen and (max-width:1399px) {
-    // NAV 
-    .menuBar.menuOpen span:last-child { bottom: 0.7vw;}
-    .container { padding:80px 100px;}
-    // skill 
+@media only screen and (max-width: 1399px) {
+    // NAV
+    .menuBar.menuOpen span:last-child {
+        bottom: 0.7vw;
+    }
+    .container {
+        padding: 80px 100px;
+    }
+    // skill
     .skill-wrap {
         > div {
-            width: calc((100% - 2vw)/3);
+            width: calc((100% - 2vw) / 3);
             margin: 1vw 0 0;
         }
     }
- }
- @media only screen and (max-width:1023px) {
+}
+@media only screen and (max-width: 1023px) {
     //NAV
-    .menuBar.menuOpen span:first-child { top: 2vw;}
-    .menuBar.menuOpen span:last-child { bottom: 0.4vw;}
-    .container { padding:80px 80px;}
-    .container h1 {
-        font-size:7vw;
+    .menuBar.menuOpen span:first-child {
+        top: 2vw;
     }
-    .logo {left: -40px;}
-    .info {left: -127px;}
+    .menuBar.menuOpen span:last-child {
+        bottom: 0.4vw;
+    }
+    .container {
+        padding: 80px 80px;
+    }
+    .container h1 {
+        font-size: 7vw;
+    }
+    .logo {
+        left: -40px;
+    }
+    .info {
+        left: -127px;
+    }
     .menuBar {
         margin-right: 4vw;
         margin-top: 4vw;
-        
-        span { width: 4vw;margin:0 0 1vw;}
+
+        span {
+            width: 4vw;
+            margin: 0 0 1vw;
+        }
     }
-    // work 
+    // work
     #work ul li {
         width: calc((100% - 8vw) / 2);
         margin: 2vw;
-
     }
-    .workSub { 
+    .workSub {
         width: 100%;
-        padding:10vw;
-        flex-direction: column-reverse; 
+        padding: 10vw;
+        flex-direction: column-reverse;
         .detail {
             position: relative;
             width: 100%;
@@ -694,35 +754,46 @@ Media Query
             margin-right: 0;
         }
     }
-    // about 
+    // about
     .timeWrap {
         width: 90%;
         margin-left: 10%;
-    
-        &::before{
+
+        &::before {
             left: 80px;
         }
         .timeLine {
             &::before {
                 left: 74px;
-            }    
+            }
         }
     }
-    
- }
+}
 
- @media only screen and (max-width:767px) {
-    .menuBar.menuOpen span:first-child { top: 3vw; }
-    .menuBar.menuOpen span:last-child { bottom: 0.5vw; }
+@media only screen and (max-width: 767px) {
+    .menuBar.menuOpen span:first-child {
+        top: 3vw;
+    }
+    .menuBar.menuOpen span:last-child {
+        bottom: 0.5vw;
+    }
     nav ul {
         width: 80%;
         li a {
             font-size: 9vw;
         }
     }
-    .container { padding: 80px 3vw 80px 4vw;}
-    .logo { top: 26px; left:20px; transform: rotate(0deg);}
-    .info { display: none; }
+    .container {
+        padding: 80px 3vw 80px 4vw;
+    }
+    .logo {
+        top: 26px;
+        left: 20px;
+        transform: rotate(0deg);
+    }
+    .info {
+        display: none;
+    }
     .menuBar {
         margin-right: 20px;
         margin-top: 29px;
@@ -733,7 +804,7 @@ Media Query
     }
     .skill-wrap {
         > div {
-            width: calc((100% - 2vw)/2);
+            width: calc((100% - 2vw) / 2);
             margin: 1vw 0;
         }
     }
@@ -748,7 +819,7 @@ Media Query
         width: calc(100% - 4vw);
         margin: 2vw 0vw 2vw 1.2vw;
         .workInfo {
-            padding:5%;
+            padding: 5%;
             .projectTit {
                 font-size: 6vw;
             }
@@ -756,33 +827,33 @@ Media Query
                 font-size: 3.6vw;
             }
             .projectSub {
-                font-size: 3.4vw;;
+                font-size: 3.4vw;
             }
         }
     }
-    .workSub { 
+    .workSub {
         padding: 17vw 5vw;
-        
+
         .detail .deMobile {
             width: 100%;
-        }  
+        }
     }
-    // about 
+    // about
     .timeWrap {
         width: 100%;
         margin-left: 0;
-    
-        &::before{
+
+        &::before {
             left: 36px;
         }
         .timeLine {
             &::before {
                 left: 30px;
-            }    
+            }
         }
     }
-    .eduWrap { 
-        padding: 3vw 4vw; 
+    .eduWrap {
+        padding: 3vw 4vw;
         > div.eduList {
             width: 100%;
             p {
@@ -795,14 +866,12 @@ Media Query
             text-align: left;
             padding-top: 10px;
             font-size: 0.8em;
-            color:#787878;
+            color: #787878;
         }
     }
+}
 
- }
-
-
- @media only screen and (max-width:490px) {
+@media only screen and (max-width: 490px) {
     .skill-wrap {
         > div {
             width: calc(100% - 2vw);
@@ -810,4 +879,4 @@ Media Query
             padding: 13px 10px;
         }
     }
- }
+}
